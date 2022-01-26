@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.yellor-logo {
+    color: yellow;
+}
+
+.jumbotron {
+    background-image: url(/imagenes/foto1.jpg), ;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    text-shadow: 0 0 5px orange;
+    margin: 0;
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+}
+
+.btn-color {
+    color: yellow;
+}
+
+.nosotros_titulo {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.crono-titulo {
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+ .entre-titulo {
+
+    font-size: 35px;
+     text-transform: uppercase;
+     font-weight: 900;
+ }
+
+.bg-crono {
+    background-image: url(/imagenes/texture-bl.jpg);
+}
+
+
+.navbar {
+    text-transform: uppercase;
+    background-color: black;
+
+
+    .navbar-brand {
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .nav-item {
+        font-size: 20px;
+
+        .nav-link {
+            color: white;
+            font-weight: 800;
+        }
+    }
+}
+
+ .bg-crono {
+      background-image: url(/imagenes/texture-bl.jpg);
+ }
+
+.bg-nosotros {
+     background-image: url(/imagenes/paper-gfdaa10667_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo_cronograma {
+    margin-bottom: 35px;
+}
+
+#map {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.bg-entre {
+     background-image: url(/imagenes/texture-bl.jpg);
+ }
+
+// //maps
+// $colors: (entre: #55acee,
+//     nosotros: #3a5795,
+//     crono: #C25E30,
+//     contacto:grey,
+// );
+
+// @each $name-color,
+// $bgcolor in $colors {
+//     .bg-#{$name-color} {
+//         background-color: $bgcolor;
+//     }
+// }
+// //mixin
+// @mixin sizes($width, $height) {
+//     height: $height;
+//     width: $width;
+// }
+
+// .box-footer {
+//     @include sizes(100%, 100%);
+// }
+
+// //extend
+// .entre-titulo{
+//     @extend .nosotros_titulo;
+//     font-size: 45px;
+    
+// }
