@@ -51,10 +51,6 @@
      font-weight: 900;
  }
 
-.bg-crono {
-    background-image: url(/imagenes/texture-bl.jpg);
-}
-
 
 .navbar {
     text-transform: uppercase;
@@ -77,11 +73,11 @@
 }
 
  .bg-crono {
-      background-image: url(/imagenes/texture-bl.jpg);
+      background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
  }
 
 .bg-nosotros {
-     background-image: url(/imagenes/paper-gfdaa10667_1280.jpg);
+     background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -97,7 +93,15 @@
 }
 
 .bg-entre {
-     background-image: url(/imagenes/texture-bl.jpg);
+     background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
+ }
+
+ .contacto-bg{
+     background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
+ }
+
+ .bg-footer{
+     background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
  }
 
 // //maps
