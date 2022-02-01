@@ -2,10 +2,15 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .yellor-logo {
     color: yellow;
+}
+
+.btn-yellow{
+    background-color: yellow;
 }
 
 .jumbotron {
@@ -16,9 +21,12 @@
     height: 600px;
     text-shadow: 0 0 5px orange;
     margin: 0;
+    border-radius: 0%;
+    
 
     h1 {
         font-size: 4rem;
+
     }
 
     p {
@@ -26,6 +34,7 @@
     }
 
 }
+
 
 .btn-color {
     color: yellow;
@@ -44,12 +53,12 @@
     font-weight: 900;
 }
 
- .entre-titulo {
+.entre-titulo {
 
     font-size: 35px;
-     text-transform: uppercase;
-     font-weight: 900;
- }
+    text-transform: uppercase;
+    font-weight: 900;
+}
 
 
 .navbar {
@@ -72,12 +81,12 @@
     }
 }
 
- .bg-crono {
-      background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
- }
+.bg-crono {
+    background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
+}
 
 .bg-nosotros {
-     background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
+    background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -93,43 +102,139 @@
 }
 
 .bg-entre {
-     background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
- }
+    background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
+}
 
- .contacto-bg{
-     background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
- }
+.contacto-bg {
+    background-image: url(https://i.ibb.co/88ZBtB0/paper-gfdaa10667-1280.jpg);
+}
 
- .bg-footer{
-     background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
- }
+.bg-footer {
+    background-color: #343A40;
+    //background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
+}
 
-// //maps
-// $colors: (entre: #55acee,
-//     nosotros: #3a5795,
-//     crono: #C25E30,
-//     contacto:grey,
-// );
 
-// @each $name-color,
-// $bgcolor in $colors {
-//     .bg-#{$name-color} {
-//         background-color: $bgcolor;
-//     }
-// }
-// //mixin
-// @mixin sizes($width, $height) {
-//     height: $height;
-//     width: $width;
-// }
+.bg-crono-2 {
+    background-image: url(https://i.ibb.co/C9T3j6K/Color-bg-blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-// .box-footer {
-//     @include sizes(100%, 100%);
-// }
+}
 
-// //extend
-// .entre-titulo{
-//     @extend .nosotros_titulo;
-//     font-size: 45px;
-    
-// }
+.btn11 {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    background: white;
+    font-size: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        border: 0px solid #fff;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 5px solid black;
+        border-left: 5px solid black;
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 5px solid black;
+        border-right: 5px solid black;
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        // background:rgba(0,0,0,.5);
+        // color:white;
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+            // border-color:white;
+        }
+    }
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    //margin: .5em 1em;
+    padding: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: rgba(255, 255, 255, .5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid yellow;
+    border-right: 3px solid yellow;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid yellow;
+    border-left: 3px solid yellow;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #3DA35D;
+}
+
+
+.underline{
+    border-bottom: 2px solid black;
+}
+
+.img-border{
+    border-radius: 30px;
+}

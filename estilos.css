@@ -7,6 +7,10 @@
   color: yellow;
 }
 
+.btn-yellow {
+  background-color: yellow;
+}
+
 .jumbotron {
   background-image: url(https://i.ibb.co/hFfWCNL/foto1.jpg);
   color: #fff;
@@ -15,6 +19,7 @@
   height: 600px;
   text-shadow: 0 0 5px orange;
   margin: 0;
+  border-radius: 0%;
 }
 .jumbotron h1 {
   font-size: 4rem;
@@ -91,7 +96,117 @@
 }
 
 .bg-footer {
-  background-image: url(https://i.ibb.co/99yKPK4/texture-bl.jpg);
+  background-color: #343A40;
+}
+
+.bg-crono-2 {
+  background-image: url(https://i.ibb.co/C9T3j6K/Color-bg-blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn11 {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.btn11:after, .btn11:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.btn11:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+}
+.btn11:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+.btn11:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.btn11:hover:before, .btn11:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  padding: 0;
+}
+
+.nav a {
+  padding: 0.5em 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid yellow;
+  border-right: 3px solid yellow;
+  transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid yellow;
+  border-left: 3px solid yellow;
+  transform: translate(100%, -50%);
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
+.underline {
+  border-bottom: 2px solid black;
+}
+
+.img-border {
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
